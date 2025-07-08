@@ -1,3 +1,30 @@
+<script>
+  // Mobile Navigation Toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+
+  navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      nav.classList.toggle('active');
+  });
+
+  // Close nav when clicking on a link
+  nav.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') {
+          navToggle.classList.remove('active');
+          nav.classList.remove('active');
+      }
+  });
+
+  // Close nav when clicking outside
+  document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !nav.contains(e.target)) {
+          navToggle.classList.remove('active');
+          nav.classList.remove('active');
+      }
+  });
+</script>
+
 {% if site.ga_analytics %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_analytics }}"></script>
   <script>

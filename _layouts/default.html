@@ -2,14 +2,12 @@
 <html lang="en">
 {% include head.html %}
 <body>
+  <!-- Page Loader -->
+  <div class="page-loader"></div>
   <main>
-    <div class="grid grid-centered">
-      <div class="grid-cell">
-        {% include navigation.html %}
-        {{ content }}
-        {% include footer.html %}
-      </div>
-    </div>
+    {% include navigation.html %}
+    {{ content }}
+    {% include footer.html %}
   </main>
   {% include javascripts.html %}
 </body>
