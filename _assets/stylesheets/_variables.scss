@@ -5,8 +5,8 @@
 // Typography
 // =============================================================================
 
-$sans-serif: "Lato", Helvetica, Arial, sans-serif;
-$serif: "Cormorant Garamond", Courier, serif;
+$sans-serif:"Rethink Sans", sans-serif;
+$serif: "Editorial Old", Courier, serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
@@ -16,21 +16,34 @@ $base-font-weight-bold: 700;
 
 // Brand colors
 
-$brand-success: #1fbf92;
-$brand-danger: #e74b3c;
-$brand-primary: #3449ed;
-$brand-warning: #f1c90b;
+$brand-success: #1fd77e;
+$brand-danger: #e83827;
+$brand-primary: #482ce6;
+$brand-warning: #e9c92c;
+
+// Variables
+// =============================================================================
+
+// Shades of gray
+
+$black: #000;
+$gray-darkest: #121111;
+$gray-darker: lighten($gray-darkest, 15);
+$gray-dark: lighten($gray-darkest, 30);
+$gray: lighten($gray-darkest, 45);
+$gray-light: lighten($gray-darkest, 60);
+$gray-lighter: lighten($gray-darkest, 75);
+$gray-lightest: lighten($gray-darkest, 85);
+$white: #fff;
+
+// Font colors
+
+$base-font-color: $gray-dark;
+$base-accent-color: $gray-dark;
+$base-accent-highlighted-color: darken($base-accent-color, 15);
 
 // Sizes
 // =============================================================================
-
-// Grid
-
-$columns: 12;
-$max-width: 650px;
-$gutter: 20px;
-$one-column: 100% / $columns;
-$negative-gutter: 0 - $gutter;
 
 // Font sizes
 
@@ -39,7 +52,7 @@ $base-line-height: 1.8;
 
 // Box sizes
 
-$base-border-radius: 4px;
+$base-border-radius: 2px;
 
 // Effects
 // =============================================================================

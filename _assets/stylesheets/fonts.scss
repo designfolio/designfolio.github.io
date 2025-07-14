@@ -4,64 +4,54 @@
 
 @charset "UTF-8";
 
-// Cormorant Garamond
+// Editorial Old
 // =============================================================================
 
 @font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 700;
-  src: asset_url('cormorant-garamond/Cormorant-Garamond-700.eot');
-  src:
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.eot?#iefix') format('embedded-opentype'),
-    local('Cormorant Garamond Medium'),
-    local('Cormorant-Garamond-600'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff2') format('woff2'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff') format('woff'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.ttf') format('truetype');
-}
-
-// Lato
-// =============================================================================
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: asset_url('lato/Lato-300.eot');
-  src:
-    asset_url('lato/Lato-300.eot?#iefix') format('embedded-opentype'),
-    local('Lato Light'),
-    local('Lato-300'),
-    asset_url('lato/Lato-300.woff2') format('woff2'),
-    asset_url('lato/Lato-300.woff') format('woff'),
-    asset_url('lato/Lato-300.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Lato';
+  font-family: 'Editorial old';
   font-style: normal;
   font-weight: 400;
-  src: asset_url('lato/Lato-regular.eot');
+  src: asset_url('editorial-old/PPEditorialOld-Regular.otf');
   src:
-    asset_url('lato/Lato-regular.eot?#iefix') format('embedded-opentype'),
-    local('Lato Regular'),
-    local('Lato-regular'),
-    asset_url('lato/Lato-regular.woff2') format('woff2'),
-    asset_url('lato/Lato-regular.woff') format('woff'),
-    asset_url('lato/Lato-regular.ttf') format('truetype');
+    asset_url('editorial-old/PPEditorialOld-Regular.otf?#iefix') format('embedded-opentype'),
+    local('Lato Light'),
+    local('PPEditorialOld-Regular.otf'),
+    asset_url('editorial-old/PPEditorialOld-Regular.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Editorial old';
+  font-style: italic;
+  font-weight: 400;
+  src: asset_url('editorial-old/PPEditorialOld-italic.otf');
+  src:
+    asset_url('editorial-old/PPEditorialOld-italic.otf?#iefix') format('embedded-opentype'),
+    local('Lato Light'),
+    local('PPEditorialOld-italic.otf'),
+    asset_url('editorial-old/PPEditorialOld-italic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Editorial old';
   font-style: normal;
   font-weight: 700;
-  src: asset_url('lato/Lato-700.eot');
+  src: asset_url('editorial-old/PPEditorialOld-ultrabold.otf');
   src:
-    asset_url('lato/Lato-700.eot?#iefix') format('embedded-opentype'),
-    local('Lato Bold'),
-    local('Lato-700'),
-    asset_url('lato/Lato-700.woff2') format('woff2'),
-    asset_url('lato/Lato-700.woff') format('woff'),
-    asset_url('lato/Lato-700.ttf') format('truetype');
+    asset_url('editorial-old/PPEditorialOld-ultrabold.otf?#iefix') format('embedded-opentype'),
+    local('Lato Light'),
+    local('PPEditorialOld-ultrabold.otf'),
+    asset_url('editorial-old/PPEditorialOld-ultrabold.otf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Editorial old';
+  font-style: italic;
+  font-weight: 700;
+  src: asset_url('editorial-old/PPEditorialOld-ultrabolditalic.otf');
+  src:
+    asset_url('editorial-old/PPEditorialOld-ultrabolditalic.otf?#iefix') format('embedded-opentype'),
+    local('Lato Light'),
+    local('PPEditorialOld-ultrabolditalic.otf'),
+    asset_url('editorial-old/PPEditorialOld-ultrabolditalic.otf') format('truetype');
 }

@@ -1,27 +1,31 @@
-<!-- Header -->
-<header class="header {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <div class="container">
-      <div class="header-content">
-          <div>
-              <svg class="logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 2L20 12H30L22 18L26 28L16 22L6 28L10 18L2 12H12L16 2Z"/>
-              </svg>
-          </div>
-          
-          <button class="nav-toggle" aria-label="Toggle navigation">
-              <div class="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </div>
-          </button>
-          
-          <nav class="nav" role="navigation">
-              <a href="#about">About</a>
-              <a href="#experience">Experience</a>
-              <a href="#testimonials">Testimonials</a>
-              <a href="#contact">Contact</a>
-          </nav>
-      </div>
-  </div>
-</header>
+<!-- Navigation Header -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Logo/Brand -->
+        <a class="navbar-brand" href="#" id="logo">
+            <i class="fas fa-asterisk star-icon"></i>
+        </a>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="border: none; color: var(--primary-blue);">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" id="aboutLink">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" id="contactLink">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bookmarks" id="bookmarksLink">Bookmarks</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
