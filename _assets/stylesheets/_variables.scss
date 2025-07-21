@@ -1,31 +1,11 @@
-// =============================================================================
-// Variables
-// =============================================================================
-
-// Typography
-// =============================================================================
-
-$sans-serif:"Rethink Sans", sans-serif;
-$serif: "Editorial Old", Courier, serif;
-$base-font-family: $sans-serif;
-$base-font-weight: 400;
-$base-font-weight-bold: 700;
-
-// Colors
-// =============================================================================
 
 // Brand colors
-
-$brand-success: #1fd77e;
-$brand-danger: #e83827;
+$brand-success: #1fd78a;
+$brand-danger: #da3020;
 $brand-primary: #482ce6;
-$brand-warning: #e9c92c;
-
-// Variables
-// =============================================================================
+$brand-warning: #e9b72c;
 
 // Shades of gray
-
 $black: #000;
 $gray-darkest: #121111;
 $gray-darker: lighten($gray-darkest, 15);
@@ -35,26 +15,28 @@ $gray-light: lighten($gray-darkest, 60);
 $gray-lighter: lighten($gray-darkest, 75);
 $gray-lightest: lighten($gray-darkest, 85);
 $white: #fff;
+$body-background: $white;
+
+
+// Typography
+$sans-serif:"Rethink Sans", sans-serif;
+$serif: "Editorial Old", Courier, serif;
+$base-font-family: $sans-serif;
+$base-font-weight: 400;
+$base-font-weight-bold: 700;
+$base-font-size: 16px;
+$base-line-height: 1.8;
 
 // Font colors
-
 $base-font-color: $gray-dark;
 $base-accent-color: $gray-dark;
 $base-accent-highlighted-color: darken($base-accent-color, 15);
 
-// Sizes
-// =============================================================================
-
-// Font sizes
-
-$base-font-size: 16px;
-$base-line-height: 1.8;
-
-// Box sizes
-
+// border radius
 $base-border-radius: 2px;
 
-// Effects
-// =============================================================================
+// Border color
+$base-border-color: $gray-lightest;
 
+// Effects
 $base-transition-speed: .2s;
