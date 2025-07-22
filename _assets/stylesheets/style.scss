@@ -45,7 +45,7 @@ html {
     padding: 8rem 0;
 }
 .hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: $serif;
     font-style: italic;
     font-weight: 500;
     color: $brand-primary;
@@ -94,13 +94,14 @@ html {
     display: inline-block;
     margin-bottom: 24px;
 }
-
+.portfolio-item .meta-info{
+    margin-bottom: 0px;
+}
 
 .portfolio-content h5 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
+    font-family: $serif;
 }
 .portfolio-content p {
     font-size: 1rem;
@@ -129,7 +130,7 @@ html {
     padding: 8rem 0;
 }
 .about-title {
-    font-family: 'Playfair Display', serif;
+    font-family: $serif;
     font-style: italic;
     font-weight: 500;
     color: $brand-primary;
@@ -200,7 +201,7 @@ html {
     margin-bottom: 0;
 }
 .experience-title {
-    font-family: 'Playfair Display', serif;
+    font-family: $serif;
     font-style: italic;
     font-weight: 500;
     color: $brand-primary;
@@ -274,7 +275,7 @@ html {
     padding: 8rem 0;
 }
 .testimonials-title {
-    font-family: 'Playfair Display', serif;
+    font-family: $serif;
     font-style: italic;
     font-weight: 500;
     color: $brand-primary;
