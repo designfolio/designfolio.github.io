@@ -17,19 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar collapse on mobile when link is clicked
-const navbarCollapse = document.getElementById('navbarNav');
-const navbarToggler = document.querySelector('.navbar-toggler');
-if (navbarCollapse && navbarToggler) {
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navbarCollapse.classList.contains('show')) {
-                navbarToggler.click();
-            }
-        });
-    });
-}
-
 // Add hover effects to navigation links
 navLinks.forEach(link => {
     link.addEventListener('mouseenter', function() {
@@ -86,9 +73,10 @@ scrollLinks.forEach(link => {
             e.preventDefault();
             targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             // Close mobile menu if open
-            if (navbarCollapse && navbarCollapse.classList.contains('show') && navbarToggler) {
-                navbarToggler.click();
-            }
+            // The following lines were removed as per the edit hint:
+            // if (navbarCollapse && navbarCollapse.classList.contains('show') && navbarToggler) {
+            //     navbarToggler.click();
+            // }
         });
     }
 });
@@ -218,6 +206,19 @@ if (backToTopBtn) {
     });
     backToTopBtn.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// Navbar collapse on mobile when link is clicked
+const navbarCollapse = document.getElementById('navbarContent');
+if (navbarCollapse) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 992) {
+                const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+                bsCollapse.hide();
+            }
+        });
     });
 }
 </script>
