@@ -28,7 +28,7 @@ html {
     text-decoration: none;
 }
 .navbar-nav .nav-link:hover {
-    color: #1a73e8 !important;
+    color: $base-font-dark !important;
     transform: translateY(-1px);
 }
 .star-icon {
@@ -96,17 +96,21 @@ html {
 }
 .portfolio-item .meta-info{
     margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 .3rem;
 }
 
 .portfolio-content h5 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: $serif;
 }
 .portfolio-content p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 0 0 16px;
     color:$base-font-color;
+    line-height: 1.5;
 }
 .project-link{
     opacity: 0;
@@ -131,8 +135,8 @@ html {
 }
 .about-title {
     font-family: $serif;
-    font-style: italic;
     font-weight: 500;
+    font-style: italic;
     color: $brand-primary;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.2;
@@ -140,6 +144,20 @@ html {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
+}
+
+.projects-title {
+    font-family: $serif;
+    font-weight: 500;
+    font-style: italic;
+    color: $brand-primary;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    padding: 0 32px 0;
+    margin: 0 0 32px;
 }
 .about-title.animate {
     opacity: 1;
@@ -149,7 +167,7 @@ html {
     padding-left: 2rem;
 }
 .about-paragraph {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: $brand-primary;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -178,7 +196,7 @@ html {
     text-align: left;
 }
 .experience-label {
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
     color: $brand-primary;
@@ -210,7 +228,7 @@ html {
     margin-bottom: 0.5rem;
 }
 .experience-details {
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     font-size: 1rem;
     color: $brand-primary;
     font-weight: 400;
@@ -236,15 +254,15 @@ html {
     font-weight: 500;
     border-radius: 6px;
     transition: all 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease 0.6s;
 }
 .resume-btn:hover {
-    background-color: #1a73e8;
+    background-color: $base-font-dark;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
+    box-shadow: 0 8px 25px rgba(19, 58, 174, 0.3);
     color: white;
 }
 .resume-btn:active {
@@ -300,17 +318,15 @@ html {
     padding-right: 2rem;
 }
 .author-name {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.875rem;
+    font-family: $sans-serif;
+    font-size: 1.5rem;
     font-weight: 600;
     color: $brand-primary;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     margin: 0.5rem 0 0.5rem;
     line-height: 1.4;
 }
 .author-title {
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     font-size: 0.875rem;
     color: $brand-primary;
     font-weight: 400;
@@ -322,7 +338,7 @@ html {
     padding-left: 0;
 }
 .testimonial-text {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: $brand-primary;
     line-height: 1.8;
     margin-bottom: 0;
@@ -361,13 +377,13 @@ html {
     font-weight: 500;
     border-radius: 6px;
     transition: all 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
 }
 .contact-btn:hover {
-    background-color: #1a73e8;
+    background-color: $base-font-dark;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
     color: white;
@@ -394,7 +410,7 @@ html {
     transform: translateY(0);
 }
 .footer-copyright {
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     font-size: 0.9rem;
     color: $brand-primary;
     margin-bottom: 0;
@@ -405,14 +421,14 @@ html {
     text-align: right;
 }
 .footer-link {
-    font-family: 'Inter', sans-serif;
+    font-family: $sans-serif;
     font-size: 0.9rem;
     color: $brand-primary;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 .footer-link:hover {
-    color: #1a73e8;
+    color: $base-font-dark;
     text-decoration: none;
 }
 .footer-separator {
@@ -498,7 +514,7 @@ html {
         padding: 3rem 0;
     }
     .portfolio-content h5 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     .portfolio-content p {
         font-size: 0.9rem;
@@ -549,6 +565,10 @@ html {
         right: 1rem;
         bottom: 1rem;
     }
+    .resume-btn{
+        display: block;
+        width: 100%;    
+    }
 }
 @media (max-width: 576px) {
     .hero-section {
@@ -576,6 +596,10 @@ html {
     }
     .footer-copyright {
         text-align: center;
+    }
+    .resume-btn{
+        display: block;
+        width: 100%;    
     }
 }
 

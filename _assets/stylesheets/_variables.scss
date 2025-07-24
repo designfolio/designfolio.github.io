@@ -29,6 +29,7 @@ $base-line-height: 1.8;
 
 // Font colors
 $base-font-color: $gray-dark;
+$base-font-dark: darken($brand-primary, 15);
 $base-accent-color: $gray-dark;
 $base-accent-highlighted-color: darken($base-accent-color, 15);
 
