@@ -46,10 +46,9 @@ html {
 }
 .hero-title {
     font-family: $serif;
-    font-style: italic;
     font-weight: 500;
     color: $brand-primary;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(2.5rem, 10vw, 8rem);
     line-height: 1.1;
     margin-bottom: 3rem;
     text-align: center;
@@ -58,10 +57,10 @@ html {
     font-size: 1.25rem;
     color: $brand-primary;
     line-height: 1.7;
-    max-width: 700px;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Portfolio Section */
@@ -95,10 +94,11 @@ html {
     margin-bottom: 24px;
 }
 .portfolio-item .meta-info{
-    margin-bottom: 0px;
-    font-weight: 600;
+    color:$gray-dark;
+    font-weight: 400;
     font-size: 1.125rem;
-    margin: 0 0 .3rem;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
 }
 
 .portfolio-content h5 {
@@ -119,8 +119,8 @@ html {
     z-index: 99;
     height: 100%;
     width: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 .portfolio-item:nth-child(1) { animation-delay: 0.1s; }
@@ -160,8 +160,8 @@ html {
     margin-bottom: 0;
     transform: translateY(30px);
     transition: all 0.6s ease;
-    padding: 0 32px 0;
-    margin: 0 0 32px;
+    padding: 0 2rem 0;
+    margin: 0 0 2rem;
 }
 .about-title.animate {
     opacity: 1;
@@ -208,7 +208,7 @@ html {
     text-transform: uppercase;
     margin-bottom: 2rem;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
     transition: all 0.6s ease;
 }
 .experience-label.animate {
@@ -224,7 +224,6 @@ html {
 }
 .experience-title {
     font-family: $serif;
-    font-style: italic;
     font-weight: 500;
     color: $brand-primary;
     font-size: clamp(1.75rem, 3vw, 2.25rem);
@@ -260,13 +259,13 @@ html {
     transition: all 0.3s ease;
     font-family: $sans-serif;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
     transition: all 0.6s ease 0.6s;
 }
 .resume-btn:hover {
     background-color: $base-font-dark;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(19, 58, 174, 0.3);
+    box-shadow: 0 8px 24px rgba(19, 58, 174, 0.3);
     color: white;
 }
 .resume-btn:active {
@@ -305,7 +304,7 @@ html {
     line-height: 1.2;
     margin-bottom: 0;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
     transition: all 0.6s ease;
 }
 .testimonials-title.animate {
@@ -346,7 +345,7 @@ html {
     color: $brand-primary;
     line-height: 1.8;
     margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 .testimonial-divider {
     width: 100%;
@@ -383,13 +382,13 @@ html {
     transition: all 0.3s ease;
     font-family: $sans-serif;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
     transition: all 0.6s ease;
 }
 .contact-btn:hover {
     background-color: $base-font-dark;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3);
+    box-shadow: 0 8px 24px rgba(66, 133, 244, 0.3);
     color: white;
 }
 .contact-btn:active {
@@ -406,7 +405,7 @@ html {
     padding: 3rem 0 6rem;
     position: relative;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(16px);
     transition: all 0.6s ease;
 }
 .footer-section.animate {
@@ -504,7 +503,15 @@ html {
         padding: 1rem 0;
     }
     .hero-title {
-        font-size: clamp(2.5rem, 10vw, 4rem);
+        font-size: clamp(2.5rem, 12vw, 4rem);
+        margin-bottom: 2rem;
+    }
+    .projects-title{
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin-bottom: 2rem;
+    }
+    .testimonials-title {
+        font-size: clamp(2rem, 8vw, 3rem);
         margin-bottom: 2rem;
     }
     .hero-description {
@@ -521,7 +528,7 @@ html {
         font-size: 1.5rem;
     }
     .portfolio-content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .about-section {
         padding: 4rem 0;
@@ -551,7 +558,6 @@ html {
     }
     .testimonials-title {
         font-size: clamp(2rem, 8vw, 3rem);
-        text-align: center;
         margin-bottom: 2rem;
     }
     .testimonial-text {
@@ -580,10 +586,18 @@ html {
         min-height: 70vh;
     }
     .hero-title {
-        font-size: clamp(2rem, 12vw, 3.5rem);
+        font-size: clamp(2rem, 14vw, 4rem);
     }
     .hero-description {
         font-size: 1rem;
+    }
+    .projects-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin: 0 0 2rem;
+    }
+    .testimonials-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin-bottom: 2rem;
     }
     .about-section {
         padding: 3rem 0;
@@ -594,7 +608,6 @@ html {
     .testimonials-section {
         padding: 3rem 0;
     }
-
     .footer-section {
         text-align: center;
     }

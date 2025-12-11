@@ -19,16 +19,16 @@ $body-background: $white;
 
 
 // Typography
-$sans-serif: "Nunito Sans", sans-serif;
+$sans-serif:"Zalando Sans", sans-serif;
 $serif: "EB Garamond", serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
-$base-font-size: 16px;
+$base-font-size: 1rem;
 $base-line-height: 1.8;
 
 // Font colors
-$base-font-color: $gray-dark;
+$base-font-color: $gray-darkest;
 $base-font-dark: darken($brand-primary, 15);
 $base-accent-color: $gray-dark;
 $base-accent-highlighted-color: darken($base-accent-color, 15);
