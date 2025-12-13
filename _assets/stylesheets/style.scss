@@ -152,7 +152,7 @@ html {
 
 .projects-title {
     font-family: $serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
     color: $brand-primary;
     font-size: clamp(2.5rem, 5vw, 4rem);
@@ -298,7 +298,7 @@ html {
 .testimonials-title {
     font-family: $serif;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
     color: $brand-primary;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.2;
@@ -557,7 +557,7 @@ html {
         padding: 4rem 0;
     }
     .testimonials-title {
-        font-size: clamp(2rem, 8vw, 3rem);
+        font-size: clamp(3rem, 8vw, 3rem);
         margin-bottom: 2rem;
     }
     .testimonial-text {
