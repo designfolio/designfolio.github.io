@@ -126,6 +126,7 @@ html {
     animation: fadeInUp 0.6s ease forwards;
     padding: 2rem;
     margin: 0 0 40px;
+    border-radius: 24px;
 }
 .portfolio-item:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -143,6 +144,7 @@ html {
     transition: transform 0.3s ease;
     display: inline-block;
     margin-bottom: 24px;
+    border-radius: 8px;
 }
 .portfolio-item .meta-info{
     color:$gray-dark;
