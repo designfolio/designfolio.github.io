@@ -1,0 +1,1137 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  margin: 0 auto;
+  font-family: "Zalando Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #121111;
+  background: #fff; }
+
+p {
+  margin: 0;
+  font-weight: 400; }
+
+b,
+strong {
+  font-weight: 700; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  color: #482ce6; }
+
+h1 {
+  font-size: 25.6px;
+  font-weight: 400;
+  letter-spacing: -.03em; }
+
+h2 {
+  font-size: 24px;
+  font-weight: 400; }
+
+h3 {
+  font-size: 20.8px;
+  font-weight: 500; }
+
+h4 {
+  font-size: 17.6px;
+  font-weight: 500; }
+
+h5 {
+  font-size: 18.72px;
+  font-weight: 500; }
+
+h6 {
+  font-size: 16px; }
+
+a {
+  color: #615b5b;
+  text-decoration: underline;
+  transition: color 0.2s linear; }
+  a:hover, a:active {
+    color: #393636; }
+  a:focus {
+    color: #393636;
+    outline: none; }
+
+svg {
+  transition: fill 0.2s linear; }
+
+ul,
+ol {
+  padding-left: 40px;
+  margin: 0; }
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted #ebeaea; }
+
+blockquote {
+  padding: 0 0 4px 15px;
+  margin: 0 0 0 -20px;
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #ada8a8;
+  border-left: 3px solid #615b5b; }
+
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ebeaea;
+  border-left: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0; }
+
+.notfound-wrapper {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  text-align: center; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #121111; }
+
+::selection {
+  color: #fff;
+  background-color: #121111; }
+
+html {
+  scroll-behavior: smooth; }
+
+.hamburger-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 30px; }
+
+.hamburger-lines .line {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #482ce6;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s; }
+
+.navbar-toggler[aria-expanded="true"] .hamburger-lines .line:first-child {
+  transform: translateY(7px) rotate(45deg); }
+
+.navbar-toggler[aria-expanded="true"] .hamburger-lines .line:last-child {
+  transform: translateY(-7px) rotate(-45deg); }
+
+/* Navigation/Header */
+.navbar {
+  background-color: transparent !important;
+  padding: 1.5rem 0; }
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #482ce6;
+  text-decoration: none; }
+
+.navbar-nav .nav-link {
+  color: #482ce6;
+  font-weight: 400;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none; }
+
+.navbar-nav .nav-link:hover {
+  color: #2c15b1 !important;
+  transform: translateY(-1px); }
+
+.star-icon {
+  font-size: 2rem;
+  color: #482ce6; }
+
+/* Hero Section */
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0; }
+
+.hero-title {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #482ce6;
+  font-size: clamp(2.5rem, 10vw, 8rem);
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #482ce6;
+  line-height: 1.7;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400; }
+
+/* Section Titles */
+.about-title,
+.experience-label,
+.projects-title,
+.testimonials-title {
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #482ce6;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease; }
+
+.about-title.animate,
+.experience-label.animate,
+.projects-title.animate,
+.testimonials-title.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.projects-title {
+  padding: 0 2rem; }
+
+/* Portfolio Section */
+.portfolio-section {
+  background-color: #fff;
+  padding: 8rem 0; }
+
+.portfolio-item {
+  position: relative;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  padding: 2rem;
+  margin: 0 0 40px; }
+
+.portfolio-item:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  padding: 32px; }
+
+.portfolio-image {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-bottom: 24px; }
+
+.portfolio-item .meta-info {
+  color: #615b5b;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase; }
+
+.portfolio-content h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "EB Garamond", serif; }
+
+.portfolio-content p {
+  font-size: 1.125rem;
+  margin: 0 0 16px;
+  color: #121111;
+  line-height: 1.5; }
+
+.project-link {
+  opacity: 0;
+  text-decoration: none;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.portfolio-item:nth-child(1) {
+  animation-delay: 0.1s; }
+
+.portfolio-item:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.portfolio-item:nth-child(3) {
+  animation-delay: 0.3s; }
+
+.portfolio-item:nth-child(4) {
+  animation-delay: 0.4s; }
+
+/* About Section */
+.about-section {
+  background-color: #fff;
+  padding: 8rem 0; }
+
+.profile-picture {
+  margin-bottom: 8rem;
+  border-radius: 1rem; }
+
+.about-content {
+  padding-left: 2rem; }
+
+.about-paragraph {
+  font-size: 1.25rem;
+  color: #482ce6;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease; }
+
+.about-paragraph.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.about-paragraph:last-child {
+  margin-bottom: 0; }
+
+.about-paragraph:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.about-paragraph:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.about-paragraph:nth-child(3) {
+  transition-delay: 0.3s; }
+
+/* Experience Section */
+.experience-section {
+  background-color: #fff;
+  padding: 8rem 0; }
+
+.experience-header {
+  text-align: left; }
+
+.experience-item > .row {
+  padding: 3rem 0;
+  position: relative; }
+
+.experience-item:last-child {
+  margin-bottom: 0; }
+
+.experience-title {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+  color: #482ce6;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.3;
+  margin-bottom: 0.5rem; }
+
+.experience-details {
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 1rem;
+  color: #482ce6;
+  font-weight: 400;
+  margin-bottom: 0rem;
+  opacity: 0.8; }
+
+.experience-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #482ce6;
+  opacity: 0.3; }
+
+.resume-button-container {
+  display: flex;
+  justify-content: flex-end; }
+
+.resume-btn {
+  background-color: #482ce6;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: "Zalando Sans", sans-serif;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.6s ease 0.6s; }
+
+.resume-btn:hover {
+  background-color: #2c15b1;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(19, 58, 174, 0.3);
+  color: white; }
+
+.resume-btn:active {
+  transform: translateY(0); }
+
+.resume-btn.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.experience-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease; }
+
+.experience-item.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.experience-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.experience-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.experience-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.experience-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
+.experience-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #fff;
+  padding: 8rem 0; }
+
+.testimonial-item > .row {
+  padding: 3rem 0; }
+
+.testimonial-item:last-child {
+  margin-bottom: 0; }
+
+.testimonial-author {
+  padding-right: 2rem; }
+
+.author-name {
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #482ce6;
+  margin: 0.5rem 0 0.5rem;
+  line-height: 1.4; }
+
+.author-title {
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #482ce6;
+  font-weight: 400;
+  margin-bottom: 0;
+  opacity: 0.8;
+  line-height: 1.4; }
+
+.testimonial-content {
+  padding-left: 0; }
+
+.testimonial-text {
+  font-size: 1.25rem;
+  color: #482ce6;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-weight: 400; }
+
+.testimonial-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #482ce6;
+  opacity: 0.3; }
+
+.testimonial-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease; }
+
+.testimonial-item.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.testimonial-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.testimonial-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.testimonial-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  margin: 6rem 0; }
+
+.contact-btn {
+  background-color: #482ce6;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-family: "Zalando Sans", sans-serif;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.6s ease; }
+
+.contact-btn:hover {
+  background-color: #2c15b1;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(66, 133, 244, 0.3);
+  color: white; }
+
+.contact-btn:active {
+  transform: translateY(0); }
+
+.contact-btn.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+/* Footer Section */
+.footer-section {
+  background-color: #fff;
+  padding: 3rem 0 6rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: all 0.6s ease; }
+
+.footer-section.animate {
+  opacity: 1;
+  transform: translateY(0); }
+
+.footer-copyright {
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #482ce6;
+  margin-bottom: 0;
+  opacity: 0.7;
+  text-align: center; }
+
+.footer-links {
+  text-align: right; }
+
+.footer-link {
+  font-family: "Zalando Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #482ce6;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+
+.footer-link:hover {
+  color: #2c15b1;
+  text-decoration: none; }
+
+.footer-separator {
+  color: #482ce6;
+  margin: 0 0.5rem;
+  opacity: 0.7; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: none;
+  color: #482ce6;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 24px;
+  width: 48px;
+  height: 48px; }
+
+.back-to-top:hover {
+  background-color: #482ce6;
+  color: #fff;
+  transform: translateY(-2px); }
+
+/* Utilities/Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards; }
+
+.fade-in-delay {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease 0.3s forwards; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .about-section,
+  .experience-section,
+  .testimonials-section,
+  .portfolio-section {
+    padding: 8rem 0 0; }
+
+  .about-content {
+    padding-left: 0;
+    margin-top: 1rem; }
+
+  .about-title {
+    text-align: center; }
+
+  .testimonial-author {
+    padding-right: 0;
+    margin-bottom: 1rem; }
+
+  .testimonial-content {
+    padding-left: 0; }
+
+  .footer-copyright {
+    text-align: center; } }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 0; }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 12vw, 5rem);
+    margin-bottom: 2rem; }
+
+  .hero-description {
+    font-size: 1.125rem;
+    padding: 0 1rem; }
+
+  .about-title,
+  .experience-label,
+  .projects-title,
+  .testimonials-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    margin: 0 0 2rem; }
+
+  .projects-title {
+    padding: 0rem; }
+
+  .portfolio-item {
+    padding: 0rem;
+    margin: 0 0 5rem; }
+
+  .portfolio-item:hover {
+    padding: 0rem;
+    box-shadow: none; }
+
+  .about-section,
+  .experience-section,
+  .testimonials-section,
+  .portfolio-section {
+    padding: 0 0 3rem; }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0; }
+
+  .portfolio-content h5 {
+    font-size: 1.6rem; }
+
+  .portfolio-content p {
+    font-size: 1.125rem; }
+
+  .about-title {
+    font-size: clamp(2rem, 8vw, 3rem); }
+
+  .about-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem; }
+
+  .experience-details {
+    font-size: 0.9rem; }
+
+  .testimonial-text {
+    font-size: 1.125rem;
+    line-height: 1.7; }
+
+  .footer-links {
+    text-align: center;
+    margin-top: 1rem; }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem; } }
+@media (max-width: 576px) {
+  section {
+    margin: 0 2rem; }
+
+  .hero-section {
+    padding: 2rem 0;
+    min-height: 70vh;
+    margin: 0 0 4rem; }
+
+  .hero-title {
+    font-size: clamp(2rem, 14vw, 4rem); }
+
+  .hero-description {
+    font-size: 1.125rem; }
+
+  .about-title,
+  .experience-label,
+  .projects-title,
+  .testimonials-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin: 0 0 2rem; }
+
+  .projects-title {
+    padding: 0rem; }
+
+  .portfolio-item {
+    padding: 0rem;
+    margin: 0 0 5rem; }
+
+  .portfolio-item:hover {
+    padding: 0rem;
+    box-shadow: none; }
+
+  .profile-picture {
+    margin: 5rem 0 2rem; }
+
+  .about-section,
+  .experience-section,
+  .testimonials-section,
+  .portfolio-section {
+    padding: 0 0 3rem; }
+
+  .about-section {
+    margin-bottom: 4rem; }
+
+  .footer-section {
+    text-align: center; }
+
+  .footer-copyright {
+    text-align: center; } }
