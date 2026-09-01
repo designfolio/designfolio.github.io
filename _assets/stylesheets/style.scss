@@ -48,7 +48,7 @@ html {
 }
 .navbar-nav .nav-link {
     color: $brand-primary;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 1rem;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -419,6 +419,7 @@ html {
     color: $brand-primary;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 .footer-link:hover {
     color: $base-font-dark;
@@ -433,20 +434,23 @@ html {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    border: none;
-    color: $brand-primary;
+    border: 1px solid $gray-lightest;
+    color:$gray-darkest;
+    background-color: $white;
     font-size: 1.25rem;
     padding: 0.5rem;
     transition: all 0.3s ease;
     border-radius: 24px;
     width: 48px;
     height: 48px;
+    opacity: 0.7;
 }
 
 .back-to-top:hover {
     background-color: $brand-primary;
     color:$white;
     transform: translateY(-2px);
+    opacity: 1;
 }
 
 /* Utilities/Animations */

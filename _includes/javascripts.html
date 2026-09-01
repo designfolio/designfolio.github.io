@@ -178,17 +178,21 @@ if (linkedinLink) {
 // =====================
 // Back to Top Button
 // =====================
+// =====================
 const backToTopBtn = document.getElementById('backToTopBtn');
 if (backToTopBtn) {
+    function toggleBackToTopButton() {
+        const shouldShow = window.scrollY > 700;
+        backToTopBtn.style.pointerEvents = shouldShow ? 'auto' : 'none';
+        backToTopBtn.style.visibility = shouldShow ? 'visible' : 'hidden';
+    }
+
+    toggleBackToTopButton();
+
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 500) {
-            backToTopBtn.style.opacity = '0.7';
-            backToTopBtn.style.pointerEvents = 'auto';
-        } else {
-            backToTopBtn.style.opacity = '0';
-            backToTopBtn.style.pointerEvents = 'none';
-        }
-    });
+        toggleBackToTopButton();
+    }, { passive: true });
+
     backToTopBtn.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
