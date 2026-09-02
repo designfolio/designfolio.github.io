@@ -32,7 +32,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="/assets/style-24629f3a10b6b388b3e9ec7fd46ad06da2f832af9bbbfdb27eb534131e146976.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style-b0d127426b9f433a085526f2c09e26e87ebd3d7fb551f5e479a9de40d5883d94.css">
   
 </head>
 
@@ -407,17 +407,21 @@ if (linkedinLink) {
 // =====================
 // Back to Top Button
 // =====================
+// =====================
 const backToTopBtn = document.getElementById('backToTopBtn');
 if (backToTopBtn) {
+    function toggleBackToTopButton() {
+        const shouldShow = window.scrollY > 700;
+        backToTopBtn.style.pointerEvents = shouldShow ? 'auto' : 'none';
+        backToTopBtn.style.visibility = shouldShow ? 'visible' : 'hidden';
+    }
+
+    toggleBackToTopButton();
+
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 500) {
-            backToTopBtn.style.opacity = '0.7';
-            backToTopBtn.style.pointerEvents = 'auto';
-        } else {
-            backToTopBtn.style.opacity = '0';
-            backToTopBtn.style.pointerEvents = 'none';
-        }
-    });
+        toggleBackToTopButton();
+    }, { passive: true });
+
     backToTopBtn.addEventListener('click', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
